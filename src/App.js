@@ -1,22 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
+import logo from './TestLogoAlpha.png';
 import './App.css';
-import BootstrapTable from "./components/BootstrapTable"
+import BootstrapTable from "./components/Table/BootstrapTable"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Find a cheaper and environment friendlier product
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-        </a>        
+    <div className="App">   
+      <header className="App-header flex-container">
+        <div className="flex-item">
+          <img src={logo} className="App-logo" alt="logo" />
+        </div>
+        <div className="flex-item">
+            <p>
+              Find a cheaper and environment friendlier product
+            </p>
+        </div>
+        <div className="flex-item">
+          <img src={logo} className="App-logo" alt="logo" />
+        </div>
       </header>
       <BootstrapTable/>
     </div>

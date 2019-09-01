@@ -25,6 +25,14 @@ const columns = [{
   dataField: 'price',
   text: 'Product Price',
   sort: true
+}, {
+  dataField: 'alternative',
+  text: 'Alternative',
+  sort: true
+}, {
+  dataField: 'sources',
+  text: 'Source',
+  sort: true
 }];
 
 export default() =>
